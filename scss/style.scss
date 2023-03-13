@@ -177,7 +177,7 @@ button:hover {
    display: flex;
    flex-direction: row;
    align-items: center;
-   padding: 10px 0 6000px 0;
+   padding: 10px 0 0 0;
 }
 .about-us__image {
    width: 50%;
@@ -205,4 +205,31 @@ gap: 10px;
 .about-us__items  img {
    max-width: 20px;
    margin: auto;
+}
+
+.partnerts__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 130px 0 130px 0;
+}
+.partners__brands {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 60%;
+   height: 300px;
+   flex-direction: column;
+}
+
+.partner-item  img {
+   width: 250px;
+}
+.partner-item {
+   padding: 0 80px 55px 50px;}
+
+
+.partners__column{
+display: flex;
+flex-direction: column;
 }
