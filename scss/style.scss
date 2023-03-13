@@ -137,6 +137,13 @@
    width: 195px;
    height: 57px;
    background-color: #fb973b;
+
+}
+button:hover {
+	background: rgba(0,0,0,0);
+	color: #fb973b;
+	box-shadow: inset 0 0 0 3px #fb973b;
+   transition-duration: 0.5s;
 }
 
 .intro__image {
@@ -163,7 +170,7 @@
    display: flex;
    flex-direction: row;
    align-items: center;
-   padding: 10px 0 0 0;
+   padding: 10px 0 6000px 0;
 }
 .about-us__image {
    width: 50%;
