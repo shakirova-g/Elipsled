@@ -86,6 +86,61 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+@media (min-width: 1200px) and (max-width: 1790px) {
+  .phone img {
+    display: none;
+  }
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 990px) and (max-width: 1199px) {
+  .phone img {
+    width: 30px;
+  }
+  .phone_web {
+    display: none;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .phone img {
+    width: 30px;
+  }
+  .phone_web {
+    display: none;
+  }
+  .intro__image img {
+    display: none;
+  }
+  .intro__content {
+    min-width: fit-content;
+  }
+  .partner-item {
+    padding: 0 15px 55px 50px;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .phone img {
+    width: 30px;
+  }
+  .phone_web {
+    display: none;
+  }
+  .intro__image {
+    display: none;
+  }
+}
+@media (max-width: 650) {
+  .intro__image {
+    display: none;
+  }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .intro__image {
+    display: none;
+  }
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -127,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 800px;
 }
 
-.phone a {
+.phone_web {
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 700;
@@ -148,7 +203,6 @@ h1, h2, h3, h4, h5, h6 {
 .intro__content {
   display: flex;
   flex-direction: column;
-  width: 60%;
   padding: 50px 0 0 0;
 }
 
@@ -157,11 +211,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 72px;
   color: #141419;
-  padding: 0 0 20px 0;
   display: inline;
   padding: 0;
   margin: 0;
-  font-size: 60px;
+  font-size: 59px;
+  letter-spacing: -0.9px;
   background-repeat: no-repeat;
   background-position: center bottom 15px;
   background-size: 100% 10px;
@@ -170,11 +224,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .block-text__text {
   font-family: "Roboto";
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 36px;
   color: #616161;
-  padding: 0 0 30px 0;
+  padding: 20px 0 30px 0;
 }
 
 .block-text__text span {
@@ -222,8 +276,8 @@ button:hover {
 }
 
 .intro__image {
-  width: 40%;
-  margin-left: -175px;
+  width: 55%;
+  margin-left: -174px;
 }
 
 .about-us__container {
@@ -231,7 +285,7 @@ button:hover {
   margin: auto;
 }
 
-.block-text_center {
+.about-us__block-text_center {
   text-align: center;
   padding: 110px 0 0 0;
 }
@@ -240,12 +294,12 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 0 0 0;
+  gap: 50px;
 }
 
 .about-us__image {
   width: 50%;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 100px;
 }
 
 .about-us__items {
