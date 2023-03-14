@@ -77,6 +77,12 @@
  .about-us__image {
    display: none;
  }
+ .about-us__items {
+   width: none;
+ }
+ .partners__block-text {
+   text-align: center;
+ }
 }
 
 @media (max-width: 650) {
@@ -86,8 +92,14 @@
   .partnerts__content {
    flex-direction: column;
  }
+ .partners__brands{
+   height: fit-content;
+ }
  .about-us__image {
    display: none;
+ }
+ .about-us__items {
+   width: none;
  }
 }
 
@@ -101,6 +113,9 @@
  }
  .about-us__image {
    display: none;
+ }
+ .about-us__items {
+   width: none;
  }
 }
 
