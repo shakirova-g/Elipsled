@@ -1,8 +1,6 @@
 @import "_stylereset";
 
 .body {
-  max-width: 1920px;
-  height: 100%;
   font-family: "Roboto";
   font-size: 18px;
   color: #616161;
@@ -12,8 +10,16 @@
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
+  overflow: hidden;
 }
-@media (min-width: 1200px) and (max-width: 1790px) {
+
+[class*=__container] {
+   max-width: 2000px;
+   margin: 0 auto;
+   padding: 0 15px;
+ } 
+
+@media (min-width: 1200px) and (max-width: 2560px) {
   .phone img {
     display: none;
   }
@@ -27,6 +33,12 @@
   .phone_web {
     display: none;
   }
+  .wrapper {
+   margin-right: -200px;
+  }
+  .partnerts__content {
+   flex-direction: column;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -38,18 +50,15 @@
     display: none;
   }
   .intro__image img {
-    display: none;
+    max-width: fit-content;
   }
-  .intro__content {
-    min-width: fit-content;
-  }
-  .partner-item {
-    padding: 0 15px 55px 50px;
-  }
+  .partnerts__content {
+   flex-direction: column;
+ }
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media  (max-width: 767px) and (min-width: 651px){
   .phone img {
     width: 30px;
   }
@@ -59,12 +68,27 @@
   .intro__image {
     display: none;
   }
+  .partnerts__content {
+   flex-direction: column;
+ }
+ .partners__brands{
+   height: fit-content;
+ }
+ .about-us__image {
+   display: none;
+ }
 }
 
 @media (max-width: 650) {
   .intro__image {
     display: none;
   }
+  .partnerts__content {
+   flex-direction: column;
+ }
+ .about-us__image {
+   display: none;
+ }
 }
 
 /* Landscape phones and smaller */
@@ -72,16 +96,22 @@
   .intro__image {
     display: none;
   }
+  .partnerts__content {
+   flex-direction: column;
+ }
+ .about-us__image {
+   display: none;
+ }
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1200px;
   height: 130px;
   align-items: center;
   margin: auto;
+  max-width: 2000px;
 }
 
 .header ul {
@@ -130,7 +160,7 @@
 }
 
 .main {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: auto;
 }
 
@@ -215,12 +245,15 @@ button:hover {
   width: 55%;
   margin-left: -174px;
 }
+img .intro__image{
+   float:right
+}
+
 
 .about-us {
 }
 .about-us__container {
-  max-width: 1000px;
-  margin: auto;
+align-items: center;
 }
 .about-us__content {
 }
